@@ -1,0 +1,27 @@
+.smoke-effect {
+    animation: slide-up 5s ease-in-out infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    opacity: 0.9;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    25% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    75% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+  

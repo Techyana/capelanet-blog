@@ -1,53 +1,74 @@
 .track-card {
-    background-color: white;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-    overflow: hidden;
-    display: flex;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  transition: transform 0.3s;
+  transform: scale(1);
+  &:hover {
+    transform: scale(1.05);
   }
-  .track-image {
-      width: 100%;
-      height: 12rem;
-      object-fit: cover;
-      filter: blur(4px);
+}
+
+.track-image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  filter: blur(2px);
+}
+
+.track-info {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.track-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.track-artist {
+  color: #718096;
+}
+
+.audio-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.play-pause-button {
+  background-color: #4299e1;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #2b6cb0;
   }
-  .track-info {
-      margin-top: 1rem;
-      text-align: center;
-  }
-  .track-title {
-      font-size: 1.25rem;
-      font-weight: bold;
-  }
-  .track-artist {
-      color: #718096;
-  }
-  .track-audio {
-      margin-top: 1rem;
-      width: 100%;
-  }
-  .track-facts {
-      margin-top: 1rem;
-      font-size: 0.875rem;
-      color: #a0aec0;
-  }
-  .track-fact {
-      margin-bottom: 0.5rem;
-      font-size: 1.25rem;
-      font-weight: bold;
-  }
-  .track-artist {
-    color: #718096;
-  }
-  .track-audio {
-    margin-top: 1rem;
-    width: 100%;
-  }
-  .track-facts {
-    margin-top: 1rem;
-    font-size: 0.875rem;
-    color: #a0aec0;
-  }
-  .track-fact {
-    margin-bottom: 0.5rem;
-  }
+}
+
+.seek-bar {
+  margin: 0 1rem;
+  width: 50%;
+}
+
+.time {
+  color: #718096;
+}
+
+.track-facts {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #a0aec0;
+}
+
+.track-fact {
+  margin-bottom: 0.5rem;
+}

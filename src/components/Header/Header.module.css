@@ -1,7 +1,7 @@
 .header {
-  background-color: #2d3748; /* bg-gray-800 */
+  background-color: #070a10; /* bg-gray-800 */
   color: #ffffff; /* text-white */
-  padding-top: 1rem; /* py-4 */
+  padding-top: 1.8rem; /* py-4 */
   padding-bottom: 1rem; /* py-4 */
 }
 
@@ -16,9 +16,13 @@
   padding-right: 1rem; /* px-4 */
 }
 
-.logo a {
+.logo {
   font-size: 1.5rem; /* text-2xl */
   font-weight: bold; /* font-bold */
+}
+
+.logoImage {
+  text-align: center;
 }
 
 .nav {

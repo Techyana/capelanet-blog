@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <a href="/">capelanet</a>
+          <a href="/"><img src="./src/components/Header/capelanet_logo.png" alt="capelanet logo" width={180} className={styles.logoImage} /></a>
         </div>
         <nav className={`${styles.nav} ${isNavOpen ? styles.navOpen : ''}`}>
           <ul className={styles.navList}>

@@ -50,13 +50,13 @@ const MediaPlayer: React.FC<{ track: Track }> = ({ track }) => {
         </motion.div>
         <button
           onClick={togglePlay}
-          className="mt-4 px-4 py-2 bg-teal-500 rounded hover:bg-teal-700 transition-colors duration-300"
+          className="mt-4 px-16 py-2 bg-teal-500 rounded-full hover:bg-teal-700 transition-colors duration-300"
         >
           {playing ? 'Pause' : 'Play'}
         </button>
       </div>
       <audio ref={audioRef} src={track.audioUrl} />
-    </div>
+    </div> 
   );
 };
 

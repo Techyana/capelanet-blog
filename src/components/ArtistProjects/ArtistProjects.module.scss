@@ -1,0 +1,33 @@
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+    background: #070a10;
+  }
+  
+  .carousel-item {
+    display: inline-block;
+    text-align: center;
+    margin: 0 0.5rem;
+  }
+  
+  .carousel-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  
+  .album-name {
+    font-size: 0.75rem;
+    color: #fff;
+  }
+  
+  .album-year {
+    font-size: 0.65rem;
+    color: #aaa;
+  }

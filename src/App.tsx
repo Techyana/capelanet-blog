@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header/Header';
+import ArtistProjects from './components/ArtistProjects/ArtistProjects';
 import Track from './components/Track/Track';
 import MediaPlayer from './components/MediaPlayer/MediaPlayer';
 import './index.css';
@@ -19,6 +20,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
+      <ArtistProjects />
       <Track {...track} />
       <MediaPlayer track={track} />
     </div>

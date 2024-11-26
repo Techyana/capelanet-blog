@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPlay, FaPause, FaStepForward, FaStepBackward, FaRandom, FaRedo } from 'react-icons/fa';
-import styles from '..Track/Track.module.scss';
+import styles from '../Track/Track.module.scss';
 
 interface TrackControlsProps {
   isPlaying: boolean;

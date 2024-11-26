@@ -3,7 +3,7 @@ import TrackImage from '../TrackImage/TrackImage';
 import TrackControls from '../TrackControls/TrackControls';
 import TrackInfo from '../TrackInfo/TrackInfo';
 import styles from './Track.module.scss';
-import defaultImage from './K-Dot.png';
+import defaultImage from './KendrickLamar-01.webp';
 
 interface TrackProps {
   title: string;

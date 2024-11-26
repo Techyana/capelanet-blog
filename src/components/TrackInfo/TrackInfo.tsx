@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from '..Track/Track.module.scss';
+import styles from '../Track/Track.module.scss';
 
 interface TrackInfoProps {
   title: string;

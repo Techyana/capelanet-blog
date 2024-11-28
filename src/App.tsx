@@ -20,13 +20,12 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <div className="App">
+      <div className="content-wrapper">
         <Header />
-        <Home track={track} />
-        <Track {...track} />
         <Routes>
           <Route path="/" element={<Home track={track} />} />
           <Route path="/projects" element={<ArtistProjects />} />
+          <Route path="/track" element={<Track {...track} />} />
         </Routes>
       </div>
     </Router>

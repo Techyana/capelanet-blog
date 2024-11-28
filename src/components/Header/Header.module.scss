@@ -1,4 +1,8 @@
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: #070a10; /* bg-gray-800 */
     color: #ffffff; /* text-white */
     padding-top: 1.8rem; /* py-4 */

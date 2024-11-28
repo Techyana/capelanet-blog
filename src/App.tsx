@@ -1,29 +1,35 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import ArtistProjects from './components/ArtistProjects/ArtistProjects';
 import Track from './components/Track/Track';
-import MediaPlayer from './components/MediaPlayer/MediaPlayer';
+import Home from './pages/Home/Home';
 import './index.css';
 
 const App: React.FC = () => {
   const track = {
-    title: "Sing About Me, I'm Dying of Thirst",
+    title: '"Ready for Rap to Return to Its Roots?"',
     artist: "Kendrick Lamar",
     imageUrl: "",
     audioUrl: "sample-audio-url.mp3",
     facts: [
-      "The song is part of Kendrick Lamar's critically acclaimed album 'good kid, m.A.A.d city'.",
-      "The song is over 12 minutes long and tells a story of Kendrick Lamar's life growing up in Compton."
+      "Discover the top 10 rappers set to redefine the genre in 2024.",
+      "Kendrick Lamar's latest album leads the charge with groundbreaking style."
     ]
   };
 
   return (
-    <div className="App">
-      <Header />
-      <ArtistProjects />
-      <Track {...track} />
-      <MediaPlayer track={track} />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Home track={track} />
+        <Track {...track} />
+        <Routes>
+          <Route path="/" element={<Home track={track} />} />
+          <Route path="/projects" element={<ArtistProjects />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

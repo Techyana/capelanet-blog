@@ -15,9 +15,9 @@
   
   .smoke-effect p {
     margin-top: 12rem;
-    white-space: normal; /* Allow text to wrap */
-    word-wrap: break-word; /* Break long words to prevent overflow */
-    text-align: center; /* Center align the text */
+    white-space: normal; 
+    word-wrap: break-word;
+    text-align: center; 
   }
   
   @keyframes slide-up {

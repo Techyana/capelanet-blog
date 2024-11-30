@@ -9,7 +9,7 @@ import './index.css';
 const App: React.FC = () => {
   const track = {
     title: '"Ready for Rap to Return to Its Roots?"',
-    artist: "Kendrick Lamar",
+    artist: "Kendrick Lamar -DNX-",
     imageUrl: "",
     audioUrl: "sample-audio-url.mp3",
     facts: [

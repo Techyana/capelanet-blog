@@ -1,7 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Home.module.scss';
 import imageOne from './Kendrick.png';
+import { Link } from 'react-router-dom';
 
 interface Track {
   title: string;
@@ -12,18 +13,9 @@ interface Track {
 }
 
 const Home: React.FC<{ track: Track }> = ({ track }) => {
-  const [playing, setPlaying] = useState(false);
   const [factIndex, setFactIndex] = useState(0);
-  const audioRef = useRef<HTMLAudioElement>(null);
 
-  const togglePlay = () => {
-    setPlaying(!playing);
-    if (playing) {
-      audioRef.current?.pause();
-    } else {
-      audioRef.current?.play();
-    }
-  };
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -54,14 +46,14 @@ const Home: React.FC<{ track: Track }> = ({ track }) => {
         >
           <p className="text-xl z-40">{track.facts[factIndex]}</p>
         </motion.div>
-        <button
-          onClick={togglePlay}
-          className="mt-4 px-16 py-2 z-50 bg-teal-500 rounded-full hover:bg-teal-700 transition-colors duration-300"
-        >
-          {playing ? 'Explore' : 'Explore'}
-        </button>
+        <Link to="/projects"
+         
+            className="mt-4 px-16 py-2 z-50 bg-teal-500 rounded-full hover:bg-teal-700 transition-colors duration-300"
+          >
+            Start
+          
+        </Link>
       </div>
-      <audio ref={audioRef} src={track.audioUrl} />
     </div>
   );
 };

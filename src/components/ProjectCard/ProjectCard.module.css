@@ -1,6 +1,6 @@
 .project-card {
   max-width: 10rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0.5rem;
   border-radius: 1rem;
   transition: transform 0.3s ease-in-out;
 }
@@ -25,12 +25,12 @@
 }
 .project-card .project-actions {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 0rem;
 }
 .project-card .project-actions .project-button {
   margin-top: 0.5rem;
-  padding: 0.3rem 1rem;
+  padding: 0.3rem 1.6rem;
   border-radius: 1rem;
   background-color: rgba(78, 219, 172, 0.7803921569);
   color: #070a10;

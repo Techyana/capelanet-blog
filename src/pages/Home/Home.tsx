@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Home.module.scss';
 import imageOne from './Kendrick.png';
@@ -44,8 +44,13 @@ const Home: React.FC<{ track: Track }> = ({ track }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
         >
-          <p className="text-xl z-40">{track.facts[factIndex]}</p>
+          <p className="text-xl z-10">{track.facts[factIndex]}</p>
         </motion.div>
+        <Link to="/projects"
+         
+            className="mt-4 px-16 py-2 z-50 bg-teal-500 rounded-full hover:bg-teal-700 transition-colors duration-300"
+          >
+            Start
         <Link
           to="/projects"
           className="mt-4 px-16 py-2 z-50 bg-teal-500 rounded-full hover:bg-teal-700 transition-colors duration-300"

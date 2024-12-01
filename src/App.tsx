@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import ArtistProjects from './components/ArtistProjects/ArtistProjects';
 import Track from './components/Track/Track';
 import Home from './pages/Home/Home';
+import AlbumView from './components/AlbumView/AlbumView'; // Import the new component
 import './index.css';
 
 const App: React.FC = () => {
@@ -26,6 +27,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Home track={track} />} />
           <Route path="/projects" element={<ArtistProjects />} />
           <Route path="/track" element={<Track {...track} />} />
+          <Route path="/album-view" element={<AlbumView />} /> {/* Add the new route */}
         </Routes>
       </div>
     </Router>

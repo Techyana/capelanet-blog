@@ -11,13 +11,15 @@
     opacity: 0.9;
     padding: 1rem; /* Add padding to ensure text does not touch the edges */
     box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    pointer-events: none; /* Allow clicks to pass through the smoke effect */
   }
   
   .smoke-effect p {
     margin-top: 12rem;
-    white-space: normal; 
-    word-wrap: break-word;
-    text-align: center; 
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Break long words to prevent overflow */
+    text-align: center; /* Center align the text */
+    pointer-events: auto;
   }
   
   @keyframes slide-up {

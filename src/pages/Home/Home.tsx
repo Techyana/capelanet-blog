@@ -44,7 +44,7 @@ const Home: React.FC<{ track: Track }> = ({ track }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
         >
-          <p className="text-xl z-40">{track.facts[factIndex]}</p>
+          <p className="text-xl z-10">{track.facts[factIndex]}</p>
         </motion.div>
         <Link to="/projects"
          

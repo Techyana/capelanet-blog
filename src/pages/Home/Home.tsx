@@ -15,8 +15,6 @@ interface Track {
 const Home: React.FC<{ track: Track }> = ({ track }) => {
   const [factIndex, setFactIndex] = useState(0);
 
-
-
   useEffect(() => {
     const interval = setInterval(() => {
       setFactIndex((prevIndex) => (prevIndex + 1) % track.facts.length);
@@ -46,6 +44,9 @@ const Home: React.FC<{ track: Track }> = ({ track }) => {
         >
           <p className="text-xl z-10">{track.facts[factIndex]}</p>
         </motion.div>
+<<<<<<< HEAD
+        <Link to="/artist-list"
+=======
         <Link to="/projects"
          
             className="mt-4 px-16 py-2 z-50 bg-teal-500 rounded-full hover:bg-teal-700 transition-colors duration-300"
@@ -53,6 +54,7 @@ const Home: React.FC<{ track: Track }> = ({ track }) => {
             Start
         <Link
           to="/projects"
+>>>>>>> ab2682434f33d00e8884370f750fae3a64528863
           className="mt-4 px-16 py-2 z-50 bg-teal-500 rounded-full hover:bg-teal-700 transition-colors duration-300"
         >
           Start

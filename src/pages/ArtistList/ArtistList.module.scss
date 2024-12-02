@@ -1,0 +1,88 @@
+.container {
+  padding: 2rem 0;
+  background-color: #070a10;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 6rem;
+}
+
+.artistList {
+  display: flex;
+  flex-direction: column;
+  gap: .1rem;
+}
+
+.artistCard {
+  display: flex;
+  align-items: center;
+  background-color: #3534345e;
+  padding: 1rem;
+  border-radius: 0rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  height: 10vh;
+  position: relative;
+}
+
+.artistCard:hover {
+  transform: scale(1.02);
+}
+
+.artistImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.artistInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.artistName {
+  font-size: .8rem;
+  margin-bottom: .6rem;
+}
+
+.artistRank,
+.artistProjects,
+.artistActive {
+  font-size: .5rem;
+  color: #666;
+}
+
+
+.viewButton {
+  position: absolute;
+  right: 1rem;
+  background-color: #38b2ac;
+  border: none;
+  border-radius: 1rem;
+  width: 100px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.viewButton:hover {
+  background-color: #319795;
+}
+
+.playIcon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  margin-right: .5rem;
+}

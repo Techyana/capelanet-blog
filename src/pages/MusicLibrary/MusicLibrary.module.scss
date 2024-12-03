@@ -9,19 +9,19 @@
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .artistList {
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  gap: .1rem;
 }
 
 .artistCard {
   display: flex;
   align-items: center;
-  background-color: rgba(53, 52, 52, 0.368627451);
+  background-color: #3534345e;
   padding: 1rem;
   border-radius: 0rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -39,8 +39,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-right: 1rem;
 }
 
@@ -50,16 +49,17 @@
 }
 
 .artistName {
-  font-size: 0.8rem;
-  margin-bottom: 0.6rem;
+  font-size: .8rem;
+  margin-bottom: .6rem;
 }
 
 .artistRank,
 .artistProjects,
 .artistActive {
-  font-size: 0.5rem;
+  font-size: .5rem;
   color: #666;
 }
+
 
 .viewButton {
   position: absolute;
@@ -84,5 +84,5 @@
   width: 20px;
   height: 20px;
   fill: white;
-  margin-right: 0.5rem;
-}/*# sourceMappingURL=ArtistList.module.css.map */
+  margin-right: .5rem;
+}

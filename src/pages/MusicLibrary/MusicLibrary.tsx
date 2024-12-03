@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from './ArtistList.module.scss';
+import styles from './MusicLibrary.module.scss';
 
 const artists = [
   {
@@ -85,7 +85,7 @@ const artists = [
   },
 ];
 
-const ArtistList: React.FC = () => {
+const MusicLibrary: React.FC = () => {
     const navigate = useNavigate();
   
     const handleArtistClick = (artistId: number) => {
@@ -94,7 +94,7 @@ const ArtistList: React.FC = () => {
   
     return (
       <div className={styles.container}>
-        <h1 className={styles.heading}>Artists</h1>
+        <h1 className={styles.heading}>Music Library</h1>
         <div className={styles.artistList}>
           {artists.map((artist) => (
             <div
@@ -126,4 +126,4 @@ const ArtistList: React.FC = () => {
     );
   };
   
-  export default ArtistList;
+  export default MusicLibrary;

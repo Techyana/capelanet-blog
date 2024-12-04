@@ -44,7 +44,7 @@ const Home: React.FC<{ track: Track }> = ({ track }) => {
           key={imageIndex}
           src={images[imageIndex]}
           alt="Carousel Image"
-          className="absolute w-full h-96 object-cover bottom-0"
+          className="absolute w-full h-full object-cover bottom-0"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

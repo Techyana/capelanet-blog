@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import AlbumView from './components/AlbumView/AlbumView';
 import MusicLibrary from './pages/MusicLibrary/MusicLibrary';
 import NewsMore from './pages/NewsMore/NewsMore';
+import ReviewsReactions from './pages/ReviewsReactions/ReviewsReactions';
 import './index.css';
 
 const App: React.FC = () => {
@@ -31,7 +32,8 @@ const App: React.FC = () => {
           <Route path="/track" element={<Track {...track} />} />
           <Route path="/album-view" element={<AlbumView />} />
           <Route path="/music-library" element={<MusicLibrary />} />
-          <Route path="/news-more" element={<NewsMore />} /> {/* Add the new route */}
+          <Route path="/news-more" element={<NewsMore />} />
+          <Route path="/reviews-reactions" element={<ReviewsReactions />} /> {/* Add the new route */}
         </Routes>
       </div>
     </Router>

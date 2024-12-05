@@ -10,7 +10,7 @@ import './index.css';
 
 const App: React.FC = () => {
   const track = {
-    title: `"Kendrick's GNX: Spotlight on Some Notable Rappers Mentioned."`,
+    title: ``,
     artist: "",
     imageUrl: "",
     audioUrl: "sample-audio-url.mp3",

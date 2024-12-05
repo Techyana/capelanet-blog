@@ -46,7 +46,7 @@ const Home: React.FC<{ track: Track }> = ({ track }) => {
 
     const articleInterval = setInterval(() => {
       setArticleIndex((prevIndex) => (prevIndex + 1) % articles.length);
-    }, 7000); // Change article every 3 seconds
+    }, 5000); // Change article every 3 seconds
 
     return () => {
       clearInterval(factInterval);

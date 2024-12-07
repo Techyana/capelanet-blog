@@ -4,6 +4,8 @@ import TrackControls from '../TrackControls/TrackControls';
 import TrackInfo from '../TrackInfo/TrackInfo';
 import styles from './Track.module.scss';
 import defaultImage from './KendrickLamar-01.webp';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 interface TrackProps {
   title: string;
@@ -20,6 +22,7 @@ const Track: React.FC<TrackProps> = ({ title, artist, imageUrl, audioUrl, facts 
   const [duration, setDuration] = useState(0);
   const [isShuffleOn, setIsShuffleOn] = useState(false);
   const [repeatMode, setRepeatMode] = useState<'off' | 'repeat' | 'repeat-one'>('off');
+  const [isLoading, setIsLoading] = useState(true);
 
   const togglePlayPause = () => {
     if (audioRef.current) {
@@ -67,7 +70,11 @@ const Track: React.FC<TrackProps> = ({ title, artist, imageUrl, audioUrl, facts 
 
   return (
     <div className={styles['track-card']}>
-      <TrackImage imageUrl={imageUrl} defaultImage={defaultImage} title={title} />
+      {isLoading ? (
+        <Skeleton height={200} />
+      ) : (
+        <TrackImage imageUrl={imageUrl} defaultImage={defaultImage} title={title} />
+      )}
       <TrackInfo title={title} artist={artist} facts={facts} />
       <TrackControls
         isPlaying={isPlaying}
@@ -99,6 +106,7 @@ const Track: React.FC<TrackProps> = ({ title, artist, imageUrl, audioUrl, facts 
         src={audioUrl}
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}
+        onCanPlayThrough={() => setIsLoading(false)}
       />
     </div>
   );

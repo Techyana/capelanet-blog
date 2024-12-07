@@ -22,6 +22,24 @@
   pointer-events: auto;
 }
 
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translatY(100%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+}
 .rounded-button {
   border-radius: 2rem;
 }/*# sourceMappingURL=Home.module.css.map */

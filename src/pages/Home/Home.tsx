@@ -74,9 +74,9 @@ const Home: React.FC<{ track: Track }> = ({ track }) => {
         <AnimatePresence>
           <motion.div
             key={articleIndex}
-            initial={{ opacity: 0}}
+            initial={{ opacity: 0, x: 0, y: 0, bottom: 0, position: 'relative' }}
             animate={{ opacity: 1}}
-            exit={{ opacity: 0}}
+            exit={{ opacity: 0, x: -500, y: -100000, bottom: 0, position: 'absolute'}}
             transition={{ duration: 1 }}
           >
             <h1 className="text-3xl font-bold mb-6">{articles[articleIndex].headline}</h1>

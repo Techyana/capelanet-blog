@@ -5,7 +5,7 @@ import styles from './ProjectCard.module.scss';
 interface ProjectCardProps {
   image: string;
   name: string;
-  year: string;
+  year: number;
   onAddToWishlist: () => void;
   onAddToCart: () => void;
 }

@@ -7,6 +7,8 @@ import imageTwo from './LilWayne.png';
 import imageThree from './Nas.png';
 import imageFour from './SnoopDogg_OG.png';
 import imageFive from './Auybrey.png';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 interface Track {
   title: string;
@@ -34,6 +36,7 @@ const Home: React.FC<{ track: Track }> = ({ track }) => {
   const [factIndex, setFactIndex] = useState(0);
   const [imageIndex, setImageIndex] = useState(0);
   const [articleIndex, setArticleIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const factInterval = setInterval(() => {
@@ -55,19 +58,30 @@ const Home: React.FC<{ track: Track }> = ({ track }) => {
     };
   }, [track.facts.length]);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Simulate loading time
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="relative flex items-center justify-center h-screen bg-gray-900">
       <AnimatePresence>
-        <motion.img
-          key={imageIndex}
-          src={images[imageIndex]}
-          alt="Carousel Image"
-          className="absolute w-full h-full object-cover bottom-0"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
-        />
+        {isLoading ? (
+          <Skeleton height="100%" width="100%" />
+        ) : (
+          <motion.img
+            key={imageIndex}
+            src={images[imageIndex]}
+            alt="Carousel Image"
+            className="absolute w-full h-full object-cover bottom-0"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+          />
+        )}
       </AnimatePresence>
       <div className="absolute w-full h-full bg-black bg-opacity-60" />
       <div className="relative z-10 text-center text-white p-4">
@@ -75,8 +89,8 @@ const Home: React.FC<{ track: Track }> = ({ track }) => {
           <motion.div
             key={articleIndex}
             initial={{ opacity: 0, x: 0, y: 0, bottom: 0, position: 'relative' }}
-            animate={{ opacity: 1}}
-            exit={{ opacity: 0, x: -500, y: -100000, bottom: 0, position: 'absolute'}}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0, x: -500, y: -100000, bottom: 0, position: 'absolute' }}
             transition={{ duration: 1 }}
           >
             <h1 className="text-3xl font-bold mb-6">{articles[articleIndex].headline}</h1>

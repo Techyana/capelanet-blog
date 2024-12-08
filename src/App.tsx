@@ -8,6 +8,8 @@ import AlbumView from './components/AlbumView/AlbumView';
 import MusicLibrary from './pages/MusicLibrary/MusicLibrary';
 import NewsMore from './pages/NewsMore/NewsMore';
 import ReviewsReactions from './pages/ReviewsReactions/ReviewsReactions';
+import Article1 from './articles/Article1';
+import Article2 from './articles/Article2';
 import './index.css';
 
 const App: React.FC = () => {
@@ -33,7 +35,10 @@ const App: React.FC = () => {
           <Route path="/album-view" element={<AlbumView />} />
           <Route path="/music-library" element={<MusicLibrary />} />
           <Route path="/news-more" element={<NewsMore />} />
-          <Route path="/reviews-reactions" element={<ReviewsReactions />} /> {/* Add the new route */}
+          <Route path="/reviews-reactions" element={<ReviewsReactions />} />
+          <Route path="/news-article-1" element={<Article1 />} />
+          <Route path="/news-article-2" element={<Article2 />} />
+          {/* Add more routes for additional articles */}
         </Routes>
       </div>
     </Router>

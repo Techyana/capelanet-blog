@@ -14,8 +14,7 @@ const Article1: React.FC = () => {
         <meta property="og:image" content="/path-to-image.jpg" />
       </Helmet>
       <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-6">
-        <h1 className="text-4xl font-bold mb-6 text-gray-700 mt-16">Kendrick's GNX: Spotlight on Some Notable Rappers Mentioned</h1>
-        <img src="/path-to-image.jpg" alt="Kendrick's GNX" className="w-full h-auto rounded-lg mb-6" />
+        <h1 className={`text-4xl font-bold mb-6 text-white mt-16 ${styles.bgImg}`}>Kendrick's GNX: Spotlight on Some Notable Rappers Mentioned</h1>
         <p className="text-lg text-gray-700 mb-4">Discover the top rappers mentioned in Kendrick's latest album GNX.</p>
         <div className="flex items-center mb-4">
           <FaStar className="text-yellow-500 mr-1" />

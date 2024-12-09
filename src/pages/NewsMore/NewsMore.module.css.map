@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"NewsMore.module.css"}
+{"version":3,"sources":["NewsMore.module.scss","NewsMore.module.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,gBAAA;ACCJ;;ADEE;EACE,WAAA;EACA,kBAAA;EACA,QAAA;EACA,0EAAA;EACA,kCAAA;EACA,0BAAA;EACA,UAAA;ACCJ;;ADEE;EACE,kBAAA;EACA,UAAA;ACCJ","file":"NewsMore.module.css"}

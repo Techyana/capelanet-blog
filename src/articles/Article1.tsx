@@ -5,7 +5,7 @@ import styles from './Article.module.scss';
 
 const Article1: React.FC = () => {
   return (
-    <div className={`p-4 bg-gray-100 min-h-screen ${styles.article}`}>
+    <div className={`bg-gray-100 min-h-screen ${styles.article}`}>
       <Helmet>
         <title>Kendrick's GNX: Spotlight on Some Notable Rappers Mentioned</title>
         <meta name="description" content="Discover the top rappers mentioned in Kendrick's latest album GNX." />
@@ -13,8 +13,9 @@ const Article1: React.FC = () => {
         <meta property="og:description" content="Discover the top rappers mentioned in Kendrick's latest album GNX." />
         <meta property="og:image" content="/path-to-image.jpg" />
       </Helmet>
-      <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-6">
-        <h1 className={`text-4xl font-bold mb-6 text-white mt-16 ${styles.bgImg}`}>Kendrick's GNX: Spotlight on Some Notable Rappers Mentioned</h1>
+      <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-0">
+        <h1 className={`text-4xl font-bold text-white mt-16 ${styles.bgImg} ${styles.bgLayer}`}>Kendrick's GNX: Spotlight on Some Notable Rappers Mentioned</h1>
+        <div className="p-4 bg-gray-100">
         <p className="text-lg text-gray-700 mb-4">Discover the top rappers mentioned in Kendrick's latest album GNX.</p>
         <div className="flex items-center mb-4">
           <FaStar className="text-yellow-500 mr-1" />
@@ -63,8 +64,9 @@ const Article1: React.FC = () => {
         <div className="aspect-w-16 aspect-h-9 mb-6 h-48">
           <iframe className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/fuV4yQWdn_4?si=-IhRlg81A2afsJ5P" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
+        </div>
 
-        <div className="bg-blue-100 p-4 rounded-lg">
+        <div className="bg-blue-100 p-4">
           <h3 className="text-xl font-bold mb-2 text-gray-700">Exclusive Insights</h3>
           <p className="text-gray-700">Get exclusive insights into the creation of GNX and the inspiration behind each track. Subscribe to our newsletter for more!</p>
         </div>

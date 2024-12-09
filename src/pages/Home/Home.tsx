@@ -29,7 +29,7 @@ const articles: Article[] = [
   { headline: "What Does Hip Hop Look Like in the Upcoming Year 2025.", link: "/news-article-2" },
   { headline: "Top 5 Movies That Influenced and Redefined the Culture.", link: "/news-article-3" },
   { headline: "Sample or Make Music From Scratch, beats versus production.", link: "/news-article-4" },
-  { headline: "Podcasts and Traditional Media bias on Music.", link: "/news-article-5" },
+  { headline: "Podcasts and Traditional Media bias on Hip Hop Music.", link: "/news-article-5" },
 ];
 
 const Home: React.FC<{ track: Track }> = ({ track }) => {

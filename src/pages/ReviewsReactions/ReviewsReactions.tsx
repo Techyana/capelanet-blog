@@ -33,8 +33,7 @@ const reactions = [
 
 const ReviewsReactions: React.FC = () => {
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="text-4xl font-bold mb-8 text-center">Reviews & Reactions</h1>
+    <div className="container mx-auto p-6 mt-16">
       
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Reactions</h2>

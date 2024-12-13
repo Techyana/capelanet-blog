@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer'; // Import the Footer component
 import ArtistProjects from './components/ArtistProjects/ArtistProjects';
 import Track from './components/Track/Track';
 import Home from './pages/Home/Home';
@@ -40,6 +41,7 @@ const App: React.FC = () => {
           <Route path="/news-article-2" element={<Article2 />} />
           {/* Add more routes for additional articles */}
         </Routes>
+        <Footer /> {/* Add the Footer component here */}
       </div>
     </Router>
   );

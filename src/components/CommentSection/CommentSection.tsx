@@ -3,19 +3,24 @@ import axios from 'axios';
 import './CommentSection.module.scss';
 
 const CommentSection: React.FC = () => {
-  const [comments, setComments] = useState([]);
+  interface Comment {
+    username: string;
+    comment: string;
+    date: string;
+  }
+
+  const [comments, setComments] = useState<Comment[]>([]);
   const [newComment, setNewComment] = useState('');
-  const [username, setUsername] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState('');
 
   useEffect(() => {
     // Fetch comments from the server
     axios.get('/api/comments').then(response => {
-      setComments(response.data);
+      setComments(response.data as Comment[]);
     });
-
     // Check if the user is logged in
-    axios.get('/api/user').then(response => {
+    axios.get<{ loggedIn: boolean; username: string }>('/api/user').then(response => {
       if (response.data.loggedIn) {
         setIsLoggedIn(true);
         setUsername(response.data.username);
@@ -34,7 +39,7 @@ const CommentSection: React.FC = () => {
 
     // Post the new comment to the server
     axios.post('/api/comments', commentData).then(response => {
-      setComments([...comments, response.data]);
+      setComments([...comments, response.data as Comment]);
       setNewComment('');
     });
   };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { FaStar } from 'react-icons/fa';
+import Footer from '../components/Footer/Footer';
 import styles from './Article.module.scss';
 
 const Article1: React.FC = () => {
@@ -32,7 +33,7 @@ const Article1: React.FC = () => {
 
         <h2 className="text-2xl font-bold mb-4 text-gray-700">Lupe Fiasco: A Subtle Shot?</h2>
         <p className="text-gray-700 mb-6">
-          One of the more subtle shots Kendrick might have thrown was at Lupe Fiasco. Kendrick's track "Wrecked Murals" has a title that seems to poke at Lupe's song "Murals." While there are no direct bars aimed at Lupe, the title itself has fans speculating about the potential diss.
+          One of the more subtle shots Kendrick might have thrown was at Lupe Fiasco. Kendrick's track "Wacced Out Murals" has a title that seems to poke at Lupe's song "Murals." While there are no direct bars aimed at Lupe, the title itself has fans speculating about the potential diss.
         </p>
         
         <h2 className="text-2xl font-bold mb-4 text-gray-700">Lil Wayne: A Missed Acknowledgment</h2>
@@ -71,6 +72,7 @@ const Article1: React.FC = () => {
           <p className="text-gray-700">Get exclusive insights into the creation of GNX and the inspiration behind each track. Subscribe to our newsletter for more!</p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

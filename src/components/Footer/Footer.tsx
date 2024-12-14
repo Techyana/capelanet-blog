@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             <Link to="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
               <FaInstagram />
             </Link>
-            <Link to="https://wa.me/123456789" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+            <Link to="https://wa.me/27731233330" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
               <FaWhatsapp />
             </Link>
           </div>

@@ -1,0 +1,55 @@
+.comment-section {
+    margin-top: 2rem;
+  }
+  
+  .comments-list {
+    margin-bottom: 1rem;
+  }
+  
+  .comment {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0.5rem 0;
+  }
+  
+  .comment-username {
+    font-weight: bold;
+  }
+  
+  .comment-date {
+    font-size: 0.875rem;
+    color: #888;
+  }
+  
+  .comment-text {
+    margin-top: 0.25rem;
+  }
+  
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment-input {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .comment-submit {
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .comment-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  .sign-up-prompt {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+  }

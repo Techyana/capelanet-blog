@@ -1,21 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Footer.module.scss'; // Ensure you create a corresponding CSS module for styling
+import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import styles from './Footer.module.scss';
+
 
 const Footer: React.FC = () => {
   return (
-    <footer className={`bg-gray-800 text-white py-6 ${styles.footer}`}>
-      <div className="container mx-auto px-4">
+    <footer className={`bg-gray-900 text-white py-8 ${styles.footer}`}>
+      <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <h2 className="text-lg font-bold">Music App</h2>
-            <p className="text-sm">© 2023 Music App. All rights reserved.</p>
+          <div className="text-center md:text-left mb-6 md:mb-0">
+            <h2 className="text-2xl font-bold mb-2">capelanet</h2>
+            <p className="text-gray-400 text-sm">© 2024 Capelanet. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">Contact: +27 78 736 4020</p>
+            <p className="text-gray-400 text-sm">Email: info@capelanet.co.za</p>
+          </div>
+          <div className="flex space-x-6 mb-6 md:mb-0">
+            <Link to="/about" className="text-gray-400 hover:text-white">About</Link>
+            <Link to="/contact" className="text-gray-400 hover:text-white">Contact Us</Link>
           </div>
           <div className="flex space-x-4">
-            <Link to="/" className="hover:underline">Home</Link>
-            <Link to="/music-library" className="hover:underline">Music Library</Link>
-            <Link to="/news-more" className="hover:underline">News + More</Link>
-            <Link to="/contact" className="hover:underline">Contact</Link>
+            <Link to="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+              <FaFacebook />
+            </Link>
+            <Link to="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+              <FaTwitter />
+            </Link>
+            <Link to="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+              <FaInstagram />
+            </Link>
+            <Link to="https://wa.me/123456789" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+              <FaWhatsapp />
+            </Link>
           </div>
         </div>
       </div>

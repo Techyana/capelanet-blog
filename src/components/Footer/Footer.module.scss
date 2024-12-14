@@ -1,0 +1,13 @@
+.footer {
+  .container {
+    @apply flex flex-col md:flex-row justify-between items-center;
+  }
+
+  a {
+    @apply transition-colors duration-300;
+  }
+
+  a:hover {
+    @apply text-white;
+  }
+}

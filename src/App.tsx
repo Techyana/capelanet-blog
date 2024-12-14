@@ -37,7 +37,6 @@ const App: React.FC = () => {
           <Route path="/news-more" element={<NewsMore />} />
           <Route path="/reviews-reactions" element={<ReviewsReactions />} />
           <Route path="/news-article-1" element={<Article1 />} />
-          
           <Route path="/news-article-2" element={<Article2 />} />
           {/* Add more routes for additional articles */}
         </Routes>

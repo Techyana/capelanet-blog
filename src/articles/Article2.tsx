@@ -15,7 +15,7 @@ const Article2: React.FC = () => {
         <meta property="og:image" content="/path-to-image.jpg" />
       </Helmet>
       <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-0">
-        <h1 className={`text-4xl font-bold text-white mt-16 ${styles.bgImg2} ${styles.bgLayer}`}>South African Rap: The Rise of Amapiano and Hip-Hop Fusion</h1>
+        <h1 className={`text-4xl font-bold text-white mt-16 ${styles.bgImg2} ${styles.bgLayer}`}></h1>
         <div className="p-4 bg-gray-100">
         <p className="text-lg text-gray-700 mb-4">Explore the rise of Amapiano and its fusion with hip-hop in South Africa.</p>
         <div className="flex items-center mb-4">

@@ -17,7 +17,17 @@ const CommentSection: React.FC = () => {
   useEffect(() => {
     // Fetch comments from the server
     axios.get('/api/comments').then(response => {
-      setComments(response.data as Comment[]);
+      const fetchedComments = response.data as Comment[];
+      if (fetchedComments.length === 0) {
+        // Initialize with an empty comment if none exist
+        setComments([{
+          username: 'Admin',
+          comment: 'Be the first to comment!',
+          date: new Date().toISOString(),
+        }]);
+      } else {
+        setComments(fetchedComments);
+      }
     });
     // Check if the user is logged in
     axios.get<{ loggedIn: boolean; username: string }>('/api/user').then(response => {

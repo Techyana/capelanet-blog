@@ -18,6 +18,17 @@
     font-size: 2rem;
 }
 
+.bgImg2 {
+    background: url('../amapiano.avif') no-repeat center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    padding: 1rem;
+    padding-top: 2rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    font-size: 2rem;
+}
+
 .bgLayer {
     background-color: rgba(0, 0, 0, 0.863);
     -webkit-backdrop-filter: blur(10px);

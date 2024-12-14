@@ -63,7 +63,7 @@ const Article1: React.FC = () => {
 
         <h2 className="text-2xl font-bold mb-4 text-gray-700">Featured Video</h2>
         <div className="aspect-w-16 aspect-h-9 mb-6 h-48">
-          <iframe className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/fuV4yQWdn_4?si=-IhRlg81A2afsJ5P" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe title="Featured Video" className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/fuV4yQWdn_4?si=-IhRlg81A2afsJ5P" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
         </div>
 

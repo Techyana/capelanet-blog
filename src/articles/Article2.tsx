@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { FaStar } from 'react-icons/fa';
+import { FaShareAlt, FaNewspaper, FaMusic, FaComments } from 'react-icons/fa';
+import { useNavigate, Link } from 'react-router-dom';
 import Footer from '../components/Footer/Footer';
 import styles from './Article.module.scss';
 
 const Article2: React.FC = () => {
+  const [showShareOptions, setShowShareOptions] = useState(false);
+  const navigate = useNavigate();
+
+  const handleShareClick = () => {
+    setShowShareOptions(!showShareOptions);
+  };
+
   return (
     <div className={`bg-gray-100 min-h-screen ${styles.article}`}>
       <Helmet>
@@ -14,17 +22,45 @@ const Article2: React.FC = () => {
         <meta property="og:description" content="Explore the rise of Amapiano and its fusion with hip-hop in South Africa." />
         <meta property="og:image" content="/path-to-image.jpg" />
       </Helmet>
-      <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-0">
-        <h1 className={`text-4xl font-bold text-white mt-16 ${styles.bgImg2} ${styles.bgLayer}`}></h1>
+      <div className="max-w-3xl mx-auto bg-white shadow-lg p-0">
+        <div className={`bg-gray-100 mt-18 p-4 ${styles.bgImg2}`}>
+          <h1 className={`text-4xl font-bold text-white px-2 ${styles.bgLayer}`}>South African Rap: The Rise of Amapiano and Hip-Hop Fusion</h1>
+        </div>
         <div className="p-4 bg-gray-100">
         <p className="text-lg text-gray-700 mb-4">Explore the rise of Amapiano and its fusion with hip-hop in South Africa.</p>
-        <div className="flex items-center mb-4">
-          <FaStar className="text-yellow-500 mr-1" />
-          <FaStar className="text-yellow-500 mr-1" />
-          <FaStar className="text-yellow-500 mr-1" />
-          <FaStar className="text-yellow-500 mr-1 opacity-50" />
-          <FaStar className="text-yellow-500 mr-2 opacity-50" />
-          <p className="text-gray-700">Rating: by Zux</p>
+        <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center space-x-4">
+            <FaNewspaper className="text-blue-500 text-2xl cursor-pointer" title="News" onClick={() => navigate('/news-more')} />
+            <FaMusic className="text-green-500 text-2xl cursor-pointer" title="Music Library" onClick={() => navigate('/music-library')} />
+            <FaComments className="text-purple-500 text-2xl cursor-pointer" title="Reviews and Reactions" onClick={() => navigate('/reviews-reactions')} />
+            <FaShareAlt className="text-gray-700 text-2xl cursor-pointer" title="Share" onClick={handleShareClick} />
+            {showShareOptions && (
+              <div className="absolute bg-white shadow-lg rounded-lg p-4 mt-2">
+                <p className="text-gray-700 mb-2">Share via:</p>
+                <div className="flex space-x-2">
+                  <Link to="https://twitter.com/share" target="_blank" rel="noopener noreferrer" className="text-blue-500">
+                    Twitter
+                  </Link>
+                  <Link to="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer" className="text-blue-700">
+                    Facebook
+                  </Link>
+                  <Link to="https://www.linkedin.com/shareArticle" target="_blank" rel="noopener noreferrer" className="text-blue-600">
+                    LinkedIn
+                  </Link>
+                </div>
+                <button
+                  onClick={() => navigator.clipboard.writeText(window.location.href)}
+                  className="mt-2 text-gray-700 underline"
+                >
+                  Copy Link
+                </button>
+              </div>
+            )}
+          </div>
+          <div className='flex-col center-items'>
+          <img src="./src/OIG (32).jpg" alt="Author" className="w-10 h-10 rounded-full" title="Author Name" />
+          <p className="text-gray-700 ml-3">Zux</p>
+          </div>
         </div>
         <p className="text-gray-700 mb-6">Date: 15 December 2024</p>
 
@@ -47,7 +83,7 @@ const Article2: React.FC = () => {
 
         <h2 className="text-2xl font-bold mb-4 text-gray-700">Featured Video</h2>
         <div className="aspect-w-16 aspect-h-9 mb-6 h-48">
-        <iframe title="Featured Video" className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/q2pgxCUTRCs?si=Yi1WlS8Q3LtPBjRC&amp;controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          <iframe title="Featured Video" className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/q2pgxCUTRCs?si=Yi1WlS8Q3LtPBjRC&amp;controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>
         </div>
 

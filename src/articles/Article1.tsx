@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { FaStar } from 'react-icons/fa';
+import { Link, useNavigate } from 'react-router-dom';
+import { FaNewspaper, FaMusic, FaComments, FaShareAlt } from 'react-icons/fa';
 import Footer from '../components/Footer/Footer';
 import styles from './Article.module.scss';
 
 const Article1: React.FC = () => {
+  const [showShareOptions, setShowShareOptions] = useState(false);
+  const navigate = useNavigate();
+
+  const handleShareClick = () => {
+    setShowShareOptions(!showShareOptions);
+  };
+
   return (
     <div className={`bg-gray-100 min-h-screen ${styles.article}`}>
       <Helmet>
@@ -14,17 +22,45 @@ const Article1: React.FC = () => {
         <meta property="og:description" content="Discover the top rappers mentioned in Kendrick's latest album GNX." />
         <meta property="og:image" content="/path-to-image.jpg" />
       </Helmet>
-      <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-0">
-        <h1 className={`text-4xl font-bold text-white mt-16 ${styles.bgImg} ${styles.bgLayer}`}>Kendrick's GNX: Spotlight on Some Notable Rappers Mentioned</h1>
+      <div className="max-w-3xl mx-auto bg-white shadow-lg p-0">
+        <div className={`bg-gray-100 mt-18 p-4 ${styles.bgImg}`}>
+          <h1 className={`text-4xl font-bold text-white px-2 ${styles.bgLayer}`}>Kendrick's GNX: Spotlight on Some Notable Rappers Mentioned</h1>
+        </div>
         <div className="p-4 bg-gray-100">
         <p className="text-lg text-gray-700 mb-4">Discover the top rappers mentioned in Kendrick's latest album GNX.</p>
-        <div className="flex items-center mb-4">
-          <FaStar className="text-yellow-500 mr-1" />
-          <FaStar className="text-yellow-500 mr-1" />
-          <FaStar className="text-yellow-500 mr-1" />
-          <FaStar className="text-yellow-500 mr-1 opacity-50" />
-          <FaStar className="text-yellow-500 mr-2 opacity-50" />
-          <p className="text-gray-700">Rating: by Zux</p>
+        <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center space-x-4">
+            <FaNewspaper className="text-blue-500 text-2xl cursor-pointer" title="News" onClick={() => navigate('/news-more')} />
+            <FaMusic className="text-green-500 text-2xl cursor-pointer" title="Music Library" onClick={() => navigate('/music-library')} />
+            <FaComments className="text-purple-500 text-2xl cursor-pointer" title="Reviews and Reactions" onClick={() => navigate('/reviews-reactions')} />
+            <FaShareAlt className="text-gray-700 text-2xl cursor-pointer" title="Share" onClick={handleShareClick} />
+            {showShareOptions && (
+              <div className="absolute bg-white shadow-lg rounded-lg p-4 mt-2">
+                <p className="text-gray-700 mb-2">Share via:</p>
+                <div className="flex space-x-2">
+                  <Link to="https://twitter.com/share" target="_blank" rel="noopener noreferrer" className="text-blue-500">
+                    Twitter
+                  </Link>
+                  <Link to="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer" className="text-blue-700">
+                    Facebook
+                  </Link>
+                  <Link to="https://www.linkedin.com/shareArticle" target="_blank" rel="noopener noreferrer" className="text-blue-600">
+                    LinkedIn
+                  </Link>
+                </div>
+                <button
+                  onClick={() => navigator.clipboard.writeText(window.location.href)}
+                  className="mt-2 text-gray-700 underline"
+                >
+                  Copy Link
+                </button>
+              </div>
+            )}
+          </div>
+          <div className='flex-col center-items'>
+          <img src="./src/OIG (32).jpg" alt="Author" className="w-10 h-10 rounded-full" title="Author Name" />
+          <p className="text-gray-700 ml-3">Zux</p>
+          </div>
         </div>
         <p className="text-gray-700 mb-6">Date: 08 December 2024</p>
 

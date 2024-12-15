@@ -10,6 +10,7 @@ import NewsMore from './pages/NewsMore/NewsMore';
 import ReviewsReactions from './pages/ReviewsReactions/ReviewsReactions';
 import Article1 from './articles/Article1';
 import Article2 from './articles/Article2';
+import Article3 from './articles/Article3';
 import './index.css';
 
 const App: React.FC = () => {
@@ -38,6 +39,7 @@ const App: React.FC = () => {
           <Route path="/reviews-reactions" element={<ReviewsReactions />} />
           <Route path="/news-article-1" element={<Article1 />} />
           <Route path="/news-article-2" element={<Article2 />} />
+          <Route path="/news-article-3" element={<Article3 />} />
           {/* Add more routes for additional articles */}
         </Routes>
       </div>

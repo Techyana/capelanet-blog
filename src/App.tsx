@@ -14,6 +14,7 @@ import Article3 from './articles/Article3';
 import Article4 from './articles/Article4';
 import Article5 from './articles/Article5';
 import './index.css';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 const App: React.FC = () => {
   const track = {
@@ -31,6 +32,7 @@ const App: React.FC = () => {
     <Router>
       <div className="content-wrapper">
         <Header />
+        <ScrollToTop>
         <Routes>
           <Route path="/" element={<Home track={track} />} />
           <Route path="/projects/:artistId" element={<ArtistProjects />} />
@@ -44,8 +46,8 @@ const App: React.FC = () => {
           <Route path="/news-article-3" element={<Article3 />} />
           <Route path="/news-article-4" element={<Article4 />} />
           <Route path="/news-article-5" element={<Article5 />} />
-          {/* Add more routes for additional articles */}
         </Routes>
+        </ScrollToTop>
       </div>
     </Router>
   );

@@ -7,49 +7,49 @@ const projects = [
       id: 1,
       image: '/images/KDot-OD.jpg',
       name: 'Overly Dedicated',
-      year: '2010',
+      year: 2010,
     },
     {
       id: 2,
       image: '/images/KDot-Section80.jpg',
       name: 'Section.80',
-      year: '2011',
+      year: 2011,
     },
     {
       id: 3,
       image: '/images/K-Dot.png',
       name: 'Good Kid, M.A.A.D City',
-      year: '2012',
+      year: 2012,
     },
     {
       id: 4,
       image: '/images/KDot-TPAB.avif',
       name: 'To Pimp A Butterfly',
-      year: '2014',
+      year: 2014,
     },
     {
       id: 5,
       image: '/images/Untitled-unmastered_KDot.jpg',
       name: 'Untitled Unmastered',
-      year: '2016',
+      year: 2016,
     },
     {
       id: 6,
       image: '/images/Damn_KDot.jpg',
       name: 'DAMN.',
-      year: '2017',
+      year: 2017,
     },
     {
       id: 7,
       image: '/images/Kendrick-Lamar-Mr-Morale-and-the-Big-Steppers.webp',
       name: 'Mr. Morale & The Big Steppers',
-      year: '2020',
+      year: 2020,
     },
     {
       id: 8,
       image: '/images/Kendrick-Lamar-GNX.webp',
       name: 'GNX',
-      year: '2024',
+      year: 2024,
     }
 ];
 

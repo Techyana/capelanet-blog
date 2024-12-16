@@ -17,11 +17,21 @@ const Article3: React.FC = () => {
     <div className={`bg-gray-100 min-h-screen ${styles.article}`}>
       <Helmet>
         <title>Chris Brown's Electrifying Concert at FNB Stadium</title>
-        <meta name="description" content="Highlights from Chris Brown's concert at FNB Stadium in Johannesburg, featuring LeeMcKrazy and the hit song Biri Marung." />
         <meta property="og:title" content="Chris Brown's Electrifying Concert at FNB Stadium" />
         <meta property="og:description" content="Highlights from Chris Brown's concert at FNB Stadium in Johannesburg, featuring LeeMcKrazy and the hit song Biri Marung." />
-        <meta property="og:image" content="/path-to-image.jpg" />
-      </Helmet>
+        <meta property="og:image" content="https://capelanet.co.za/chris-brown-concert.png" />
+        <meta property="og:url" content="https://capelanet.co.za/chris-brown-concert" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Capelanet" />
+        <meta property="og:locale" content="en_US" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Chris Brown's Electrifying Concert at FNB Stadium" />
+        <meta name="twitter:description" content="Highlights from Chris Brown's concert at FNB Stadium in Johannesburg, featuring LeeMcKrazy and the hit song Biri Marung." />
+        <meta name="twitter:image" content="https://capelanet.co.za/chris-brown-concert.png" />
+        <meta name="twitter:site" content="@capelanet_"/>
+        <meta name="twitter:creator" content="@capelanet_"/>
+    </Helmet>
       <div className="max-w-3xl mx-auto bg-white shadow-lg p-0">
         <div className={`bg-gray-100 mt-18 p-4 ${styles.bgImg3}`}>
             <h1 className={`text-4xl font-bold text-white px-2 ${styles.bgLayer}`}>Chris Brown's Electrifying Concert at FNB Stadium</h1>
@@ -58,7 +68,7 @@ const Article3: React.FC = () => {
                     )}
                   </div>
                   <div className='flex-col center-items'>
-                  <img src="./src/OIG (32).jpg" alt="Author" className="w-10 h-10 rounded-full" title="Author Name" />
+                  <img src="images/OIG (32).jpg" alt="Author" className="w-10 h-10 rounded-full" title="Author Name" />
                   <p className="text-gray-700 ml-3">Zux</p>
                   </div>
                 </div>
@@ -74,7 +84,7 @@ const Article3: React.FC = () => {
         <p className="text-gray-700 mb-6">One of the highlights of the night was when Chris Brown danced to the biggest Amapiano song of December, "Biri Marung." The crowd went wild as the familiar beats filled the stadium, and Chris Brown's dance moves perfectly complemented the infectious rhythm of the song.</p>
 
         <div className="flex items-center mb-6">
-          <img src="./src/ChrisB2.jpg" alt="Chris Brown Concert" className="w-20 h-20 rounded-full mr-4" />
+          <img src="images/ChrisB2.jpg" alt="Chris Brown Concert" className="w-20 h-20 rounded-full mr-4" />
           <p className="text-gray-700">Chris Brown performing at FNB Stadium in Johannesburg.</p>
         </div>
 

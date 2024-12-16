@@ -5,49 +5,49 @@ import styles from './ArtistProjects.module.scss';
 const projects = [
     {
       id: 1,
-      image: '/src/KDot-OD.jpg',
+      image: '/images/KDot-OD.jpg',
       name: 'Overly Dedicated',
       year: '2010',
     },
     {
       id: 2,
-      image: '/src/KDot-Section80.jpg',
+      image: '/images/KDot-Section80.jpg',
       name: 'Section.80',
       year: '2011',
     },
     {
       id: 3,
-      image: '/src/K-Dot.png',
+      image: '/images/K-Dot.png',
       name: 'Good Kid, M.A.A.D City',
       year: '2012',
     },
     {
       id: 4,
-      image: '/src/KDot-TPAB.avif',
+      image: '/images/KDot-TPAB.avif',
       name: 'To Pimp A Butterfly',
       year: '2014',
     },
     {
       id: 5,
-      image: '/src/Untitled-unmastered_KDot.jpg',
+      image: '/images/Untitled-unmastered_KDot.jpg',
       name: 'Untitled Unmastered',
       year: '2016',
     },
     {
       id: 6,
-      image: '/src/Damn_KDot.jpg',
+      image: '/images/Damn_KDot.jpg',
       name: 'DAMN.',
       year: '2017',
     },
     {
       id: 7,
-      image: '/src/Kendrick-Lamar-Mr-Morale-and-the-Big-Steppers.webp',
+      image: '/images/Kendrick-Lamar-Mr-Morale-and-the-Big-Steppers.webp',
       name: 'Mr. Morale & The Big Steppers',
       year: '2020',
     },
     {
       id: 8,
-      image: '/src/Kendrick-Lamar-GNX.webp',
+      image: '/images/Kendrick-Lamar-GNX.webp',
       name: 'GNX',
       year: '2024',
     }

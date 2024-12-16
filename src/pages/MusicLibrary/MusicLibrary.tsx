@@ -6,7 +6,7 @@ const artists = [
   {
     id: 1,
     name: 'Kendrick Lamar',
-    image: '/src/Kendrick-Lamar-GNX.webp',
+    image: 'images/Kendrick-Lamar-GNX.webp',
     rank: Math.floor(Math.random() * 10) + 1,
     projects: 8,
     activeYears: 17,
@@ -14,7 +14,7 @@ const artists = [
   {
     id: 2,
     name: 'Drake',
-    image: '/src/Drake.jpg',
+    image: 'images/Drake.jpg',
     rank: Math.floor(Math.random() * 10) + 1,
     projects: 11,
     activeYears: 16,
@@ -22,7 +22,7 @@ const artists = [
   {
     id: 3,
     name: 'J. Cole',
-    image: '/src/JCole.png',
+    image: 'images/JCole.png',
     rank: Math.floor(Math.random() * 10) + 1,
     projects: 6,
     activeYears: 14,
@@ -30,7 +30,7 @@ const artists = [
   {
     id: 4,
     name: 'Travis Scott',
-    image: '/src/TravisScott.jpg',
+    image: 'images/TravisScott.jpg',
     rank: Math.floor(Math.random() * 10) + 1,
     projects: 4,
     activeYears: 8,
@@ -38,7 +38,7 @@ const artists = [
   {
     id: 5,
     name: 'Kanye West',
-    image: '/src/KanyeWest.jpg',
+    image: 'images/KanyeWest.jpg',
     rank: Math.floor(Math.random() * 10) + 1,
     projects: 10,
     activeYears: 18,
@@ -46,7 +46,7 @@ const artists = [
   {
     id: 6,
     name: 'Jay-Z',
-    image: '/src/jay-z.webp',
+    image: 'images/jay-z.webp',
     rank: Math.floor(Math.random() * 10) + 1,
     projects: 13,
     activeYears: 26,
@@ -54,7 +54,7 @@ const artists = [
   {
     id: 7,
     name: 'Eminem',
-    image: '/src/eminem.jpg',
+    image: 'images/eminem.jpg',
     rank: Math.floor(Math.random() * 10) + 1,
     projects: 11,
     activeYears: 24,
@@ -62,7 +62,7 @@ const artists = [
   {
     id: 8,
     name: 'Lil Wayne',
-    image: '/src/LilWayne.jpg',
+    image: 'images/LilWayne.jpg',
     rank: Math.floor(Math.random() * 10) + 1,
     projects: 13,
     activeYears: 25,
@@ -70,7 +70,7 @@ const artists = [
   {
     id: 9,
     name: 'Nas',
-    image: '/src/Nas.webp',
+    image: 'images/Nas.webp',
     rank: Math.floor(Math.random() * 10) + 1,
     projects: 12,
     activeYears: 28,
@@ -78,7 +78,7 @@ const artists = [
   {
     id: 10,
     name: '50 Cent',
-    image: '/src/50Cent.jpg',
+    image: 'images/50Cent.jpg',
     rank: Math.floor(Math.random() * 10) + 1,
     projects: 5,
     activeYears: 18,

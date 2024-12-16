@@ -20,7 +20,18 @@ const Article2: React.FC = () => {
         <meta name="description" content="Explore the rise of Amapiano and its fusion with hip-hop in South Africa." />
         <meta property="og:title" content="South African Rap: The Rise of Amapiano and Hip-Hop Fusion" />
         <meta property="og:description" content="Explore the rise of Amapiano and its fusion with hip-hop in South Africa." />
-        <meta property="og:image" content="/path-to-image.jpg" />
+        <meta property="og:image" content="https://capelanet.co.za/rsa-amapiano-rap.png" />
+        <meta property="og:url" content="https://capelanet.co.za/rsa-amapiano-rap" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Capelanet" />
+        <meta property="og:locale" content="en_US" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="South African Rap: The Rise of Amapiano and Hip-Hop Fusion" />
+        <meta name="twitter:description" content="Explore the rise of Amapiano and its fusion with hip-hop in South Africa." />
+        <meta name="twitter:image" content="https://capelanet.co.za/rsa-amapiano-rap.png" />
+        <meta name="twitter:site" content="@capelanet_"/>
+        <meta name="twitter:creator" content="@capelanet_"/>
       </Helmet>
       <div className="max-w-3xl mx-auto bg-white shadow-lg p-0">
         <div className={`bg-gray-100 mt-18 p-4 ${styles.bgImg2}`}>
@@ -58,7 +69,7 @@ const Article2: React.FC = () => {
             )}
           </div>
           <div className='flex-col center-items'>
-          <img src="./src/OIG (32).jpg" alt="Author" className="w-10 h-10 rounded-full" title="Author Name" />
+          <img src="images/OIG (32).jpg" alt="Author" className="w-10 h-10 rounded-full" title="Author Name" />
           <p className="text-gray-700 ml-3">Zux</p>
           </div>
         </div>
@@ -77,7 +88,7 @@ const Article2: React.FC = () => {
         <p className="text-gray-700 mb-6">Collaborations between South African artists and international stars have further propelled the genre. Tracks like "Siyathandana" by Cassper Nyovest featuring Abidoza and Boohle have garnered millions of views on YouTube.</p>
 
         <div className="flex items-center mb-6">
-          <img src="./src/Focalistic.jpg" alt="Rapper Image" className="w-20 h-20 rounded-full mr-4" />
+          <img src="images/Focalistic.jpg" alt="Rapper Image" className="w-20 h-20 rounded-full mr-4" />
           <p className="text-gray-700">Focalistic, a pioneer in the Amapiano and hip-hop fusion scene, continues to push boundaries with his innovative sound.</p>
         </div>
 

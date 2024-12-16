@@ -20,7 +20,18 @@ const Article4: React.FC = () => {
         <meta name="description" content="Highlights from the recent political events in South Africa, including the EFF's 3rd NPA conference, MK Party's anniversary, and SACP's decision to go solo in the upcoming elections." />
         <meta property="og:title" content="A New Dawn for Politics in South Africa" />
         <meta property="og:description" content="Highlights from the recent political events in South Africa, including the EFF's 3rd NPA conference, MK Party's anniversary, and SACP's decision to go solo in the upcoming elections." />
-        <meta property="og:image" content="/path-to-image.jpg" />
+        <meta property="og:image" content="https://capelanet.co.za/anc-mkp-eff.png" />
+        <meta property="og:url" content="https://capelanet.co.za/anc-mkp-eff" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Capelanet" />
+        <meta property="og:locale" content="en_US" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Highlights from the recent political events in South Africa, including the EFF's 3rd NPA conference, MK Party's anniversary, and SACP's decision to go solo in the upcoming elections." />
+        <meta name="twitter:description" content="Highlights from the recent political events in South Africa, including the EFF's 3rd NPA conference, MK Party's anniversary, and SACP's decision to go solo in the upcoming elections." />
+        <meta name="twitter:image" content="https://capelanet.co.za/anc-mkp-eff.png" />
+        <meta name="twitter:site" content="@capelanet_"/>
+        <meta name="twitter:creator" content="@capelanet_"/>
       </Helmet>
       <div className="max-w-3xl mx-auto bg-white shadow-lg p-0">
         <div className={`bg-gray-100 mt-18 p-4 ${styles.bgImg4}`}>
@@ -58,11 +69,11 @@ const Article4: React.FC = () => {
             )}
           </div>
           <div className='flex-col center-items'>
-          <img src="./src/OIG (32).jpg" alt="Author" className="w-10 h-10 rounded-full" title="Author Name" />
+          <img src="images/OIG (32).jpg" alt="Author" className="w-10 h-10 rounded-full" title="Author Name" />
           <p className="text-gray-700 ml-3">Zux</p>
           </div>
         </div>
-        <p className="text-gray-700 mb-6">Date: 20 December 2024</p>
+        <p className="text-gray-700 mb-6">Date: 16 December 2024</p>
 
         <h2 className="text-2xl font-bold mb-4 text-gray-700">EFF's 3rd NPA Conference</h2>
         <p className="text-gray-700 mb-6">The Economic Freedom Fighters (EFF) recently held their 3rd National People's Assembly (NPA) conference, where they announced their new top 6 leadership. The conference was a significant event, with many questioning the absence of Mbuyiseni Ndlozi.</p>
@@ -77,7 +88,7 @@ const Article4: React.FC = () => {
         <p className="text-gray-700 mb-6">The South African Communist Party (SACP) has announced that they will be going solo in the upcoming local elections in 2026. This decision has raised questions about the impact on their members in the executive and whether they will take away voters from the African National Congress (ANC).</p>
 
         <div className="flex items-center mb-6">
-          <img src="./src/EFF_President.jpeg" alt="EFF Conference" className="w-20 h-20 rounded-full mr-4" />
+          <img src="images/EFF_President.jpeg" alt="EFF Conference" className="w-20 h-20 rounded-full mr-4" />
           <p className="text-gray-700">EFF's 3rd NPA conference in full swing.</p>
         </div>
 

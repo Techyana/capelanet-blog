@@ -18,9 +18,22 @@ const Article1: React.FC = () => {
       <Helmet>
         <title>Kendrick's GNX: Spotlight on Some Notable Rappers Mentioned</title>
         <meta name="description" content="Discover the top rappers mentioned in Kendrick's latest album GNX." />
-        <meta property="og:title" content="Kendrick's GNX: Spotlight on Some Notable Rappers Mentioned" />
+        <meta property="og:title" content="Kendrick's GNX: Spotlight on Some Notable Rappers Mentioned." />
         <meta property="og:description" content="Discover the top rappers mentioned in Kendrick's latest album GNX." />
-        <meta property="og:image" content="/path-to-image.jpg" />
+        <meta property="og:image" content="https://capelanet.co.za/kdot-cover.png" />
+        <meta property="og:url" content="https://capelanet.co.za/kdot-cover" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Capelanet" />
+        <meta property="og:locale" content="en_US" />
+
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Kendrick's GNX: Spotlight on Some Notable Rappers Mentioned." />
+        <meta name="twitter:description" content="Discover the top rappers mentioned in Kendrick's latest album GNX." />
+        <meta name="twitter:image" content="https://capelanet.co.za/kdot-cover.png" />
+        <meta name="twitter:site" content="@capelanet_"/>
+        <meta name="twitter:creator" content="@capelanet_"/>      
+      
       </Helmet>
       <div className="max-w-3xl mx-auto bg-white shadow-lg p-0">
         <div className={`bg-gray-100 mt-18 p-4 ${styles.bgImg}`}>
@@ -58,7 +71,7 @@ const Article1: React.FC = () => {
             )}
           </div>
           <div className='flex-col center-items'>
-          <img src="./src/OIG (32).jpg" alt="Author" className="w-10 h-10 rounded-full" title="Author Name" />
+          <img src="images/OIG (32).jpg" alt="Author" className="w-10 h-10 rounded-full" title="Author Name" />
           <p className="text-gray-700 ml-3">Zux</p>
           </div>
         </div>
@@ -93,7 +106,7 @@ const Article1: React.FC = () => {
         </p>
 
         <div className="flex items-center mb-6">
-          <img src="./src/JCole.png" alt="Rapper Image" className="w-20 h-20 rounded-full mr-4" />
+          <img src="images/JCole.png" alt="Rapper Image" className="w-20 h-20 rounded-full mr-4" />
           <p className="text-gray-700">Where does J. Cole and KDot's rap relationship stand in the aftermath of the beef that saw Hip Hop divided.</p>
         </div>
 

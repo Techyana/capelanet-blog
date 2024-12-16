@@ -20,7 +20,20 @@ const Article5: React.FC = () => {
         <meta name="description" content="Learn about health concerns for different age groups, how to eat healthy, suggested meals, markets, and local weather." />
         <meta property="og:title" content="Health Concerns and Healthy Eating for Different Age Groups" />
         <meta property="og:description" content="Learn about health concerns for different age groups, how to eat healthy, suggested meals, markets, and local weather." />
-        <meta property="og:image" content="/path-to-image.jpg" />
+        <meta property="og:image" content="https://capelanet.co.za/eating-healthy.png" />
+        <meta property="og:url" content="https://capelanet.co.za/eating-healthy" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Capelanet" />
+        <meta property="og:locale" content="en_US" />
+
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Health Concerns and Healthy Eating for Different Age Groups" />
+        <meta name="twitter:description" content="Learn about health concerns for different age groups, how to eat healthy, suggested meals, markets, and local weather." />
+        <meta name="twitter:image" content="https://capelanet.co.za/eating-healthy.png" />
+        <meta name="twitter:site" content="@capelanet_"/>
+        <meta name="twitter:creator" content="@capelanet_"/>
+      
       </Helmet>
       <div className="max-w-3xl mx-auto bg-white shadow-lg p-0">
         <div className={`bg-gray-100 mt-18 p-4 ${styles.bgImg5}`}>
@@ -58,11 +71,11 @@ const Article5: React.FC = () => {
             )}
           </div>
           <div className='flex-col center-items'>
-          <img src="./src/OIG (32).jpg" alt="Author" className="w-10 h-10 rounded-full" title="Author Name" />
+          <img src="images/OIG (32).jpg" alt="Author" className="w-10 h-10 rounded-full" title="Author Name" />
           <p className="text-gray-700 ml-3">Zux</p>
           </div>
         </div>
-        <p className="text-gray-700 mb-6">Date: 20 December 2024</p>
+        <p className="text-gray-700 mb-6">Date: 16 December 2024</p>
 
         <h2 className="text-2xl font-bold mb-4 text-gray-700">Health Concerns for Different Age Groups</h2>
         <p className="text-gray-700 mb-6">Different age groups have different health concerns. It's important to be aware of these concerns and take steps to address them. Here are some common health concerns for various age groups:</p>
@@ -101,7 +114,7 @@ const Article5: React.FC = () => {
         </ul>
 
         <div className="flex items-center mb-6">
-          <img src="./src/Fitness_Coach-1.jpeg" alt="Healthy Eating" className="w-20 h-20 rounded-full mr-4" />
+          <img src="images/fitness_coach-1.jpeg" alt="Healthy Eating" className="w-20 h-20 rounded-full mr-4" />
           <p className="text-gray-700">Healthy eating is crucial for maintaining good health.</p>
         </div>
 

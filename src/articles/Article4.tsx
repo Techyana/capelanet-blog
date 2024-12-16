@@ -77,13 +77,13 @@ const Article4: React.FC = () => {
         <p className="text-gray-700 mb-6">The South African Communist Party (SACP) has announced that they will be going solo in the upcoming local elections in 2026. This decision has raised questions about the impact on their members in the executive and whether they will take away voters from the African National Congress (ANC).</p>
 
         <div className="flex items-center mb-6">
-          <img src="./src/EFFConference.jpg" alt="EFF Conference" className="w-20 h-20 rounded-full mr-4" />
+          <img src="./src/EFF_President.jpeg" alt="EFF Conference" className="w-20 h-20 rounded-full mr-4" />
           <p className="text-gray-700">EFF's 3rd NPA conference in full swing.</p>
         </div>
 
         <h2 className="text-2xl font-bold mb-4 text-gray-700">Featured Video</h2>
         <div className="aspect-w-16 aspect-h-9 mb-6 h-48">
-          <iframe title="Featured Video" className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/your-video-id" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe title="Featured Video" className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/Q0Iho51GLU8?si=9n_ZMBGpCsTp5LYn" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
         </div>
 

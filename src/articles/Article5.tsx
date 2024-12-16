@@ -101,13 +101,13 @@ const Article5: React.FC = () => {
         </ul>
 
         <div className="flex items-center mb-6">
-          <img src="./src/HealthyEating.jpg" alt="Healthy Eating" className="w-20 h-20 rounded-full mr-4" />
+          <img src="./src/Fitness_Coach-1.jpeg" alt="Healthy Eating" className="w-20 h-20 rounded-full mr-4" />
           <p className="text-gray-700">Healthy eating is crucial for maintaining good health.</p>
         </div>
 
         <h2 className="text-2xl font-bold mb-4 text-gray-700">Featured Video</h2>
         <div className="aspect-w-16 aspect-h-9 mb-6 h-48">
-          <iframe title="Featured Video" className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/your-video-id" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe title="Featured Video" className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/Dzr9OUI1Yj8?si=DfQNO-i6NUOw5h-3&amp;controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
         </div>
 

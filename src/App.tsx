@@ -12,6 +12,7 @@ import Article1 from './articles/Article1';
 import Article2 from './articles/Article2';
 import Article3 from './articles/Article3';
 import Article4 from './articles/Article4';
+import Article5 from './articles/Article5';
 import './index.css';
 
 const App: React.FC = () => {
@@ -42,6 +43,7 @@ const App: React.FC = () => {
           <Route path="/news-article-2" element={<Article2 />} />
           <Route path="/news-article-3" element={<Article3 />} />
           <Route path="/news-article-4" element={<Article4 />} />
+          <Route path="/news-article-5" element={<Article5 />} />
           {/* Add more routes for additional articles */}
         </Routes>
       </div>

@@ -93,7 +93,7 @@ const MusicLibrary: React.FC = () => {
     };
   
     return (
-      <div className="w-full p-4 bg-gray-900 overflow-y-auto">
+      <div className="w-full p-12 bg-gray-900 overflow-y-auto">
         <h1 className="text-center text-4xl mb-8 mt-16 text-white">Music Library</h1>
         <div className="flex flex-col gap-1">
           {artists.map((artist) => (

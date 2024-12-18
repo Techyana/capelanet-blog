@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import './NewsMore.module.scss'; // Import the CSS file for additional styles
+import './NewsMore.module.scss';
 
 const articles = [
   {
@@ -27,10 +27,10 @@ const articles = [
   },
   {
     id: 4,
-    title: "A New Dawn for Politics in South Africa.",
-    excerpt: "Highlights from the recent political events in South Africa, including the EFF's 3rd NPA conference, MK Party's anniversary, and SACP's decision to go solo in the upcoming elections.",
+    title: "Chinese vs European Cars in South Africa.",
+    excerpt: "A comprehensive comparison of Chinese and European cars in the South African market, including market share, consumer trends, and predictions.",
     link: "/news-article-4",
-    image: "images/ANC_MKP_EFF_IMG.png",
+    image: "images/Cars.jpg",
   },
   {
     id: 5,
@@ -43,10 +43,10 @@ const articles = [
 
 const NewsMore: React.FC = () => {
   return (
-    <div className="container mx-auto p-0 mb-8">
+    <div className="container mx-auto p-0 mb-8 bg-gray-950">
       <h1 className="text-2xl font-bold mt-20 text-center">News + More</h1>
       <h2 className="mt-8 pb-2 pl-4">Latest News:</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
         {articles.map((article) => (
           <motion.div
             key={article.id}

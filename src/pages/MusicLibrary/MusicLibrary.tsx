@@ -86,45 +86,45 @@ const artists = [
 ];
 
 const MusicLibrary: React.FC = () => {
-    const navigate = useNavigate();
-  
-    const handleArtistClick = (artistId: number) => {
-      navigate(`/projects/${artistId}`);
-    };
-  
-    return (
-      <div className="w-full p-12 bg-gray-900 overflow-y-auto">
-        <h1 className="text-center text-4xl mb-8 mt-16 text-white">Music Library</h1>
-        <div className="flex flex-col gap-1">
-          {artists.map((artist) => (
-            <div
-              key={artist.id}
-              className="flex items-center bg-gray-700 px-2 py-4 rounded-lg shadow-md cursor-pointer transition-transform transform hover:scale-105"
-              onClick={() => handleArtistClick(artist.id)}
-            >
-              <img src={artist.image} alt={artist.name} className={`rounded-full object-cover mr-0 ${styles.artistImage}`} />
-              <div className="flex flex-col">
-                <h2 className="text-lg text-white mb-2">{artist.name}</h2>
-                <p className="text-sm text-gray-400">Top 10 Artist: {artist.rank}</p>
-                <p className="text-sm text-gray-400">Projects: {artist.projects}</p>
-                <p className="text-sm text-gray-400">Active: {artist.activeYears} years</p>
-              </div>
-              <button className="ml-0 bg-teal-500 text-white rounded-full px-4 py-2 flex items-center transition-colors hover:bg-teal-600">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-5 h-5 mr-2"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                View
-              </button>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
+  const navigate = useNavigate();
+
+  const handleArtistClick = (artistId: number) => {
+    navigate(`/projects/${artistId}`);
   };
-  
-  export default MusicLibrary;
+
+  return (
+    <div className={`w-full pt-12 bg-gray-900 overflow-y-auto ${styles.body}`}>
+      <h1 className={`text-center text-xl mb-8 mt-16 ${styles.heading}`}>Music Library</h1>
+      <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 p-4 ${styles.artists}`}>
+        {artists.map((artist) => (
+          <div
+            key={artist.id}
+            className={styles.artistCard}
+            onClick={() => handleArtistClick(artist.id)}
+          >
+            <img src={artist.image} alt={artist.name} className={styles.artistImage} />
+            <div className={styles.artistInfo}>
+              <h2 className={styles.artistName}>{artist.name}</h2>
+              <p className={styles.artistRank}>Top 10 Artist: {artist.rank}</p>
+              <p className={styles.artistProjects}>Projects: {artist.projects}</p>
+              <p className={styles.artistActive}>Active: {artist.activeYears} years</p>
+            </div>
+            <button className={styles.viewButton}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className={styles.playIcon}
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              View
+            </button>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default MusicLibrary;

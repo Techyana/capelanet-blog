@@ -2,42 +2,36 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7fafc;
+  background-color: #1a202c;
 }
 
 .heading {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
   margin-top: 4rem;
-}
-
-.artistList {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
+  color: #fff;
 }
 
 .artistCard {
   display: flex;
   align-items: center;
-  background-color: rgba(53, 52, 52, 0.368627451);
+  background-color: #2d3748;
   padding: 1rem;
-  border-radius: 0rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: transform 0.2s;
-  height: 10vh;
+  transition: transform 0.3s, background-color 0.3s;
   position: relative;
 }
 
 .artistCard:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
+  background-color: #4a5568;
 }
 
 .artistImage {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -47,28 +41,27 @@ body {
 .artistInfo {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .artistName {
-  font-size: 0.8rem;
-  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .artistRank,
 .artistProjects,
 .artistActive {
-  font-size: 0.5rem;
-  color: #666;
+  font-size: 0.9rem;
+  color: #a0aec0;
 }
 
 .viewButton {
-  position: absolute;
-  right: 1rem;
   background-color: #38b2ac;
   border: none;
   border-radius: 1rem;
-  width: 100px;
-  height: 35px;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;

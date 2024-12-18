@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { FaShareAlt, FaCar, FaChartLine, FaComments } from 'react-icons/fa';
+import { FaShareAlt, FaNewspaper, FaChartLine, FaComments } from 'react-icons/fa';
 import { useNavigate, Link } from 'react-router-dom';
 import Footer from '../components/Footer/Footer';
 import styles from './Article.module.scss';
@@ -41,7 +41,7 @@ const Article4: React.FC = () => {
         <p className="text-lg text-gray-700 mb-4">A comprehensive comparison of Chinese and European cars in the South African market, including market share, consumer trends, and predictions.</p>
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-4">
-            <FaCar className="text-blue-500 text-2xl cursor-pointer" title="Car Models" onClick={() => navigate('/car-models')} />
+            <FaNewspaper className="text-blue-500 text-2xl cursor-pointer" title="News" onClick={() => navigate('/news-more')} />
             <FaChartLine className="text-green-500 text-2xl cursor-pointer" title="Market Trends" onClick={() => navigate('/market-trends')} />
             <FaComments className="text-purple-500 text-2xl cursor-pointer" title="Reviews and Reactions" onClick={() => navigate('/reviews-reactions')} />
             <FaShareAlt className="text-gray-700 text-2xl cursor-pointer" title="Share" onClick={handleShareClick} />

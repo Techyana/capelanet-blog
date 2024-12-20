@@ -21,12 +21,12 @@ const reactions = [
   {
     id: 1,
     title: "Reaction to Kendrick Lamar's New Single",
-    videoUrl: "https://www.youtube.com/embed/your-video-id-1",
+    videoUrl: "https://www.youtube.com/embed/g4JCiBUq2P8?si=v862DH4sD64myLxk",
   },
   {
     id: 2,
     title: "First Listen: New Hip Hop Releases",
-    videoUrl: "https://www.youtube.com/embed/your-video-id-2",
+    videoUrl: "https://www.youtube.com/embed/PqpKZhodWz4?si=CwpNPHIX8r5HclQb",
   },
   // Add more reactions as needed
 ];

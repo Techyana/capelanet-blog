@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-6 md:mb-0">
             <h2 className="text-2xl font-bold mb-2">capelanet</h2>
-            <p className="text-gray-400 text-sm">© 2024 Capelanet. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© 2025 Capelanet. All rights reserved.</p>
             <p className="text-gray-400 text-sm">Contact: +27 78 736 4020</p>
             <p className="text-gray-400 text-sm">Email: info@capelanet.co.za</p>
           </div>
